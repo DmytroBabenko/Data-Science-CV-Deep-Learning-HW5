@@ -83,12 +83,12 @@
 * Conclusion <br>
 Overall, in this paper, they propose a novel network for image SR called super-resolution feedback network (SRFBN) to faithfully reconstruct a SR image by enhancing low-level representations with high-level ones.
 
-##2. CNN visualization
+## 2. CNN visualization
 In the image bellow, we can see the visualization of Super-Resolution Feedback Network (SRFBN). The original visualization is in [SRFBN.drawio](./SRFBN.drawio) file.
         ![SRFBN](images/SRFBN.png)
         ![Feedback Block](images/Feedback_block.png)
         
-##3. Experiment summary
+## 3. Experiment summary
 ### Experiment summary 
 
 First of all, there were added several graphs to tensor board, which shows us the dependencies loss vs epochs and accuracy vs epoch for training. 
