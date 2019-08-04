@@ -84,12 +84,12 @@
 Overall, in this paper, they propose a novel network for image SR called super-resolution feedback network (SRFBN) to faithfully reconstruct a SR image by enhancing low-level representations with high-level ones.
 
 ##2. CNN visualization
-In the image bellow, we can see the visualization of Super-Resolution Feedback Network (SRFBN). The original visualization is in SRFBN.drawio file.
+In the image bellow, we can see the visualization of Super-Resolution Feedback Network (SRFBN). The original visualization is in [SRFBN.drawio](./SRFBN.drawio) file.
         ![SRFBN](images/SRFBN.png)
         ![Feedback Block](images/Feedback_block.png)
         
 ##3. Experiment summary
-###Experiment summary 
+### Experiment summary 
 
 First of all, there were added several graphs to tensor board, which shows us the dependencies loss vs epochs and accuracy vs epoch for training. 
          ![Train graphs](images/Train_graphs.png ) 
@@ -147,11 +147,11 @@ Accuracy of horse : 76 %
 Accuracy of  ship : 86 %
 Accuracy of truck : 82 %
 ```
-####Comparing training time CPU vs GPU
+#### Comparing training time CPU vs GPU
 CPU training time for this model was 11 min 52 s (~ 12 min) and GPU training time was 6 min 36 s. 
 As it was expected training CNN model on GPU is faster than on CPU, because there a lot of matrix operation which are parallel distributed on GPU computation.
 
-####Future improvements 
+#### Future improvements 
 This is one of the most simple way how to improve provided model. In the next steps, it would be great to try use 
 different optimizer and sceduler with different parameters (lr and momentum in optimizer and step_size and gamma in scheduler).
 Maybe, some parameters would be good to find via RandomSeach approach (train and test model with different parameters and select these which give the best accuracy).<br>
@@ -161,7 +161,7 @@ Probably, these models give significantly better accuracy. <br>
 
 ___
 
- *The experiment was done in the original provided notebook, to see this modified notebook with more details about experiment result, please look Experiment_a3_cifar10.ipynb*
+ *The experiment was done in the original provided notebook, to see this modified notebook with more details about experiment result, please look [Experiment_a3_cifar10.ipynb](./Experiment_a3_cifar10.ipynb)*
 
 
 
